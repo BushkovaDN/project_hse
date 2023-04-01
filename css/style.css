@@ -1,0 +1,1020 @@
+/* russo-one-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/russo-one-v14-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/russo-one-v14-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+html{
+  box-sizing: border-box;
+}
+*,*::before, *::after{
+box-sizing:inherit ;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/*верхнее меню*/
+.wraper{
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header_wraper{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 31px;
+  }
+
+  .header_list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none; 
+}
+
+.header_item{
+  margin-right: 82px;
+}
+
+.header_item:last-child{
+  margin-right: 0;
+}
+
+.header_link{
+  text-decoration: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #102746
+
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-bottom: 30px;
+  z-index: 999;
+}
+
+
+
+.header_active{
+  background: #fff;
+  opacity: 95%;
+}
+
+.header_link:hover,.header_link:focus, .header_link:active{
+  opacity: 75%;
+}
+
+.header_burger{
+  width: 40px;
+  height: 28px;
+  position: relative;
+  display: none;
+
+}
+
+.burger_line{
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+}
+
+.burger_line1{
+  top: 0;
+}
+
+.burger_line2{
+top: 50%;
+transform: translateY(-50%);
+}
+
+.burger_line3{
+  bottom: 0;
+}
+
+.bg-ob{
+  background: url(../img/bgob.png) no-repeat center;
+  background-size: cover;
+}
+
+/*главная страница заголовок*/
+
+.intro{
+
+  min-height: 100vh;
+  background: url(../img/first_bg.png) no-repeat center;
+  background-size: cover;
+  padding-top: 154px;
+  padding-bottom: 223px;
+}
+
+
+.intro_title{
+  max-width: 750px;
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 90px;
+  text-transform: uppercase;
+  color: #2A3C79;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+}
+
+
+.intro_subtitle{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #0D1A8A;
+  max-width: 324px;
+  float:right;
+ }
+
+.wraper_1{
+max-width: 750px;
+}
+
+.wraper_head{
+ display: flex;
+ justify-content: space-between; 
+}
+
+.buton{
+  max-width: 750px;
+  margin-top: 118px;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button{
+  width: 350px;
+  height: 71px;
+  left: 364px;
+  top: 457px;
+  background: #F887AE;
+  border-radius: 25px;
+  font-family: 'Lato';
+font-style: italic;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #0D1A8A;
+ border:none;
+ box-shadow: 0px 0px 2px 2px rgb(255,182,193);
+  }
+
+  .button:hover, .button:focus, .button:activ{
+    background: #f32b70;
+  }
+
+/*о портале*/
+
+.portal{
+  margin-bottom: 131px;
+}
+
+
+.portal_wrap{
+  max-width: 1262px ;
+  background-color: white;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.85);
+box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+position: relative;
+}
+
+.portal_cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  grid-column-gap: 55px;
+  padding: 0 100px;
+}
+
+.portal_title{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+color: #102746;
+padding: 93px 100px 88px 100px;
+position: absolute;
+top:0;
+left: 0;
+transform: translateY(-100%);
+background-color: white;
+width:100%;
+}
+
+
+.portal_card{
+  grid_column: span 1;
+  margin-bottom: 112px;
+}
+
+.portal_card-pic{
+  margin-bottom: 37px;
+  margin-top: 30px;
+  max-width: 66px;
+}
+
+.portal_card-thumb{
+  display: block;
+}
+
+.portal_card-title{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #000000;
+margin-bottom: 26px;
+}
+.portal_card-desk{
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 39px;
+}
+
+.portal_card-more{
+  display: inline-block;
+  padding-right: 59px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/Shape.svg)no-repeat 95% center;
+  transition: .2s all;
+ }
+
+
+.portal_card-more:hover, .portal_card-more:focus{
+    background: url(../img/Shape.svg)no-repeat right; center;
+}
+
+
+/*разделы портала*/
+
+.places{
+  margin-bottom: 131px;
+}
+
+.wraper_full{
+  max-width: 1262px;
+  margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.section_title{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 42px;
+color: #102746;
+position: relative;
+padding-bottom: 10px;
+}
+
+.section_title::after{
+  display: block;
+  content: '';
+  width: 253px;
+  height: 3px;
+  background-color: 2A3C79;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
+
+
+
+.places_caption{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+ margin-bottom: 36px;
+}
+
+.places_view-all{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: right;
+color: #006DFE;
+text-decoration: none;
+ background: url(../img/Shape.svg)no-repeat 100% center;
+ padding-right: 59px;
+}
+
+.places_view-all:hover, .places_view-all:focus{
+  opacity: .65;
+
+}
+
+.places_title{
+  margin: 15px;
+}
+
+.places_cards{
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-gap: 10 px;
+
+}
+
+.places_card_size-lg{
+  grid-column: span 3;
+
+}
+
+.places_card_size-small{
+  grid-column: span 2;
+
+}
+
+
+.figure{
+  margin: 0;
+
+}
+
+.places_card-pic{
+  width: 100%;
+  transition: .15s all;
+}
+
+.places_card-pic_size-lg{
+  height: 350px;
+  object-fit: cover;
+}
+
+.places_card-pic_size-sm{
+  height: 283px;
+  object-fit: cover;
+}
+
+
+
+.places_card{
+  position: relative;
+  margin: 5px;
+  overflow: hidden;
+}
+
+.places_card:hover .places_card-pic{
+transform: scale(1.02);
+}
+
+.places_card::after{
+  display: block;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.places_card-title{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 60px;
+color: #FFFFFF;
+position: absolute;
+bottom: 27px;
+left:29px;
+z-index: 3;
+}
+
+.places_card-link{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 4;
+}
+
+/*о проеподавателе*/
+
+.teachers{
+  margin-bottom: 139px;
+}
+
+.teachers_teacher{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 108 px;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.teacher_title{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 40px;
+color: #102746;
+margin-bottom: 15px;
+}
+
+.teacher_desk{
+  font-family: 'Lato';
+font-style: italic;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+color: #102746;
+margin-bottom: 15px;
+}
+
+
+
+.teacher_link{
+  display: inline-block;
+  padding-right: 59px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/Shape.svg)no-repeat 95% center;
+  transition: .2s all;
+ }
+
+
+.teacher_link:hover, .teacher_link:focus{
+    background: url(../img/Shape.svg)no-repeat right; center;
+}
+
+
+/*результаты*/
+
+.rez{
+  margin-bottom: 98px;
+}
+
+.rez_title{
+  margin-bottom: 56px;
+}
+
+.rez_card-pic{
+  position: relative;
+}
+
+.rez_card-stats{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 16px 25px;
+justify-content: flex-end;
+background-color: rgba(21, 24, 36, 0.6);
+
+}
+
+.rez_cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 57px;
+  margin-bottom: 15px;
+}
+
+.rez_card-title{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+margin: 0 auto 0 0;
+}
+
+.rez_card-man{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+padding-right: 20px;
+background: url(../img/man.svg) no-repeat right;
+margin-right: 14px;
+}
+
+.rez_card_stat-icon{
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+padding-right: 20px;
+background: url(../img/stat.svg) no-repeat right;
+}
+
+.rez_link{
+padding-right: 59px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #006DFE;
+  text-decoration: none;
+  background: url(../img/Shape.svg)no-repeat 100% center;
+  transition: .2s all;
+   float: right;
+}
+
+
+
+
+.rez_link:hover, .rez_link:focus{
+    background: url(../img/Shape.svg)no-repeat right; center;
+     opacity: 75%;
+}
+
+
+/*отзывы*/
+
+.otz_title{
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 40px;
+color: #102746;
+text-align: center;
+}
+
+.otz_wraper{
+  margin: 0px 159px  auto 147px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0 159 px;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.otz_info-name{
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 600;
+font-size: 35px;
+line-height: 42px;
+text-align: right;
+color: #000000;
+}
+
+.otz_info-otz{
+  font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+line-height: 42px;
+text-align: right;
+color: #000000;
+}
+
+/*обратный звонок*/
+
+.call{
+  
+}
+
+.mail{
+width: 100%;
+}
+
+.call_contaiber{
+   display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+  grid-column-gap: 216px;
+  padding: 0 100px;
+}
+.podropno-title{
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 35px;
+line-height: 42px;
+color: #0D1A8A;
+text-align: center;
+}
+
+.call-title{
+   font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 35px;
+line-height: 42px;
+color: #0D1A8A;
+text-align: center;
+}
+
+
+
+.button2{
+  margin: auto 0 0 0;
+  width: 350px;
+  height: 71px;
+  left: 364px;
+  top: 457px;
+  background: #F887AE;
+  border-radius: 25px;
+  font-family: 'Lato';
+font-style: italic;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+text-transform: uppercase;
+color: #0D1A8A;
+ border:none;
+ box-shadow: 0px 0px 2px 2px rgb(255,182,193);
+}
+
+.call_contaiber{
+  flex-direction: column;
+}
+
+/*videos*/
+
+.videos{
+  width: 100%;
+}
+
+.videos_wraper{
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.video_item{
+  padding-top: 56.25%;
+}
+
+.video-element{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+
+/*footer*/
+
+.footer{
+  padding: 87px 0 197px 0;
+  background: url(../img/bg3.png) no-repeat center;
+  background-size: cover;
+}
+
+.footer_item{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_logo{
+  width: 50%;
+}
+.footer_nav{
+  width: 50%;
+
+}
+
+.footer_menu-title{
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 35px;
+line-height: 42px;
+color: #0D1A8A;
+text-decoration: none;
+}
+
+.menu{
+   list-style-type: none;
+}
+
+.footer_link1{
+  padding-right: 82px;
+  margin-bottom: 27px;
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+text-decoration: none;
+background: url(../img/vk.svg)no-repeat 100% center;
+  transition: .2s all;
+  margin-bottom: 27px;
+   
+}
+
+.footer_link2{
+  padding-right: 125px;
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+text-decoration: none;
+background: url(../img/mail.svg)no-repeat 100% center;
+  transition: .2s all;
+  
+}
+
+.footer_link3{
+    padding-right: 110px;
+  font-family: 'Inter';
+font-style: italic;
+font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+color: #000000;
+text-decoration: none;
+background: url(../img/tg.svg)no-repeat 100% center;
+  transition: .2s all;
+   
+}
+
+.footer_link1:hover, .footer_link1:focus, .footer_link1:active{
+  opacity: .65;
+}
+.footer_link2:hover, .footer_link2:focus, .footer_link2:active{
+  opacity: .65;
+}
+.footer_link3:hover, .footer_link3:focus, .footer_link3:active{
+  opacity: .65;
+}
+
+.bg2{
+  background: url(../img/bg2.png) no-repeat center;
+  background-size: cover;
+}
+
+/*media*/
+
+@media screen and (max-width: 987px){
+    .header_item{
+      margin-right: 10px;
+    }
+
+    .intro_title{
+      font-size: 40px;
+      line-height: 50px;
+    }
+    .intro_subtitle{
+      font-size: 15px;
+    }
+    /*.portal_cards{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr) ;
+      grid-column-gap: 5px;
+      padding: 0 100px;
+    }*/
+    .portal_cards{
+      padding: 0 10px;
+      grid-column-gap: 35px;
+    }
+    .portal_card{
+      margin-bottom: 12px;
+      margin-bottom: 60px;
+    }
+    .portal_title{
+      padding: 45px 15px;
+    }
+   .portal{
+    margin-bottom: 70px;
+   }
+   .places_card_size-lg{
+    grid-column: span 3;
+   }
+   .places_card_size-lg:first-child{
+  grid-column: span 6;
+}
+   .places_card_size-small{
+  grid-column: span 3;
+
+}
+.otz_wraper{
+  margin: 0px 50px auto 50px;
+}
+.otz_info-otz{
+      font-size: 25px;
+}
+  .rez_cards{
+    grid-gap: 7px;
+  }
+  .rez_card-man{
+    margin-right: 4px;
+  }
+  .rez_card-title{
+        font-size: 12px
+  }
+  .rez_card_stat-icon{
+    font-size: 12px
+  }
+  .rez_card-man{
+      font-size: 12px
+  }
+  .footer_menu-title{
+     font-size: 20px
+  }
+  .footer_link1{
+      font-size: 20px
+  }
+  .footer_link2{
+      font-size: 20px
+  }
+  .footer_link3{
+      font-size: 20px
+  }
+  .teachers{
+    margin-bottom: 68px;
+  }
+}
+
+.header_item:last-child{
+  margin-right: 0;
+}
+
+
+
+@media screen and (max-width: 767px){
+  .header_burger{
+    display: block;
+    }
+  .header_nav{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 10;
+    padding: 75px;
+    transform: translateX(100%);
+    transition: .2s all linear;
+  }
+  .header_nav_active{
+        transform: translateX(0);
+  }
+  .header_item{
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .header_item:last-child{
+    margin-bottom: 0;
+  }
+  .header_link{
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .header_nav-close{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+  }
+  .header_nav-close-line{
+    display: block;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+  .header_nav-close-line:first-child{
+      transform: translateY(-50%) rotate(45deg);
+  }
+  .header_nav-close-line:last-child{
+      transform: translateY(-50%) rotate(-45deg);
+  }
+  .portal_card{
+    grid-column: span 3;
+  }
+  .places_card_size-lg{
+    grid-column: span 6;
+   }
+   
+   .places_card_size-small{
+  grid-column: span 6;
+}
+.rez_card{
+  grid-column: span 3;
+  margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+.rez_card-stats{
+  grid-column: span 1;
+}
+..portal_card{
+  grid_column: span 3;
+  margin-bottom: 112px;
+}
+.portal_card{
+    margin-bottom: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.portal_card-pic{
+   display: block;
+      margin: 0 auto; 
+}
+.portal_title{
+     text-align: center;
+    }
+
+}
